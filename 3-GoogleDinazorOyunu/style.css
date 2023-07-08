@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.oyun {
+    width: 800px;
+    height: 300px;
+    margin: auto;
+    margin-top: 50px;
+    border: 2px solid black;
+
+}
+
+#dinazor {
+    width: 70px;
+    height: 70px;
+    background-image: url(Resimler/Dinazor.jpeg);
+    background-size: 70px 70px;
+    position: relative;
+    top: 230px;
+}
+
+.jump {
+    animation: jump 0.25s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 230px;
+    }
+
+    30% {
+        top: 100px;
+    }
+
+    40% {
+        top: 80px;
+    }
+
+    50% {
+        top: 30px;
+    }
+
+    60% {
+        top: 80px;
+    }
+
+    80% {
+        top: 100px;
+    }
+
+    100% {
+        top: 230px;
+    }
+
+}
+
+#kaktus {
+    width: 40px;
+    height: 80px;
+    position: relative;
+    top: 150px;
+    left: 600px;
+    background-image: url(Resimler/Kaktus.png);
+    background-size: 40px 80px;
+
+    animation: engel 1s infinite linear;
+}
+
+@keyframes engel {
+    0% {
+        left: 600px;
+    }
+
+    100% {
+        left: -30px;
+    }
+
+}
